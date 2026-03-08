@@ -23,21 +23,60 @@
 </head>
 
 <body>
+    <!-- nav bar -->
     <header>
-        <div class="navbar w-11/12 mx-auto">
-            <div class="navbar bg-base-100 shadow-sm flex justify-between">
-                <div class="flex gap-2 font-medium">
-                    <!-- <a class="btn btn-ghost text-xl">daisyUI</a> -->
-                     <p><img src="./assets/github-thumb.png" alt=""></p>
-                     <p>GitHub Issues Tracker</p>
-                </div>
-                <div class="flex gap-2">
-                    <input type="text" placeholder="Search issues..." class="input input-bordered w-24 md:w-auto" />
-                    <button class="btn btn-primary"><span class="text-2xl">+</span>New Issue</button>
+        <nav>
+            <div class="navbar">
+                <div class="navbar bg-base-100 shadow-sm flex justify-between">
+                    <div class="flex gap-2 font-medium">
+                        <!-- <a class="btn btn-ghost text-xl">daisyUI</a> -->
+                        <p><img src="./assets/github-thumb.png" alt=""></p>
+                        <p>GitHub Issues Tracker</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <input type="text" placeholder="Search issues..." class="input input-bordered w-24 md:w-auto" />
+                        <button class="btn btn-primary"><span class="text-2xl">+</span>New Issue</button>
+                    </div>
                 </div>
             </div>
-        </div>
+        </nav>
+
+        <section class="w-[80%] mx-auto shadow mt-10 px-10 py-5 rounded">
+            <button
+                class="btn text-[#64748B] bg-white hover:text-white hover:bg-[#4A00FF]  px-6 btn-outline">ALL</button>
+            <button
+                class="btn text-[#64748B] bg-white hover:text-white hover:bg-[#4A00FF]  px-6 btn-outline">Open</button>
+            <button
+                class="btn text-[#64748B] bg-white hover:text-white hover:bg-[#4A00FF]  px-6 btn-outline">Closed</button>
+        </section>
     </header>
+    <!-- main  -->
+    <main class="w-[80%] mx-auto mt-15">
+        <div class="flex justify-between items-center shadow-sm p-5 rounded">
+            <div class="flex gap-x-5">
+                <div>
+                    <p><img src="./assets/Group 1.png" alt=""></p>
+                </div>
+                <div class="">
+                    <p class="font-semibold">50 Issues</p>
+                    <p class="text-[#64748B]">Track and manage your project issues</p>
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <p>OPen</p>
+                <p>Closed</p>
+            </div>
+            <!-- <div class="divide"></div> -->
+
+        </div>
+        <!-- card section  -->
+        <section id="card-section">
+
+        </section>
+
+    </main>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
