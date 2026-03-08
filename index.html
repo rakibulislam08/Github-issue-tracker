@@ -21,8 +21,36 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body>
-<h1 class="text-8xl">hello</h1>
+    <div class="hero bg-base-200 min-h-screen">
+        <div class="hero-content lg:flex-row-reverse">
+            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <div class="card-body">
+
+                    <div class="text-center lg:text-left my-5 ">
+                        <!-- <h1 class="text-5xl font-bold">Login now!</h1> -->
+                        <img class="w-30 h-30 mx-auto py-2" src="./assets/github-thumb.png" alt="">
+                        <p class="text-2xl text-center font-medium py-2">GitHub Issues Tracker</p>
+                        <p class="py-2 text-center text-[#64748B]">
+                            Sign in to manage your issues
+                        </p>
+                    </div>
+                    <div class="shadow p-3">
+                        <fieldset class="fieldset">
+                            <label class="label">Email</label>
+                            <input type="email" class="input" placeholder="Enter UserName" />
+                            <label class="label">Password</label>
+                            <input type="password" class="input" placeholder="Enter Your Password" />
+                            <div><a class="link link-hover">Forgot password?</a></div>
+                            <button id="login-btn" class="btn btn-primary mt-4">Login</button>
+                        </fieldset>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
