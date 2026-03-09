@@ -2,7 +2,6 @@ const api = "https://phi-lab-server.vercel.app/api/v1/lab/issues"
 
 let allIssues = []
 
-// LOAD ALL ISSUES
 async function loadAllCards() {
 
     const cardsContainer = document.getElementById("cardsContainer")
@@ -17,7 +16,6 @@ async function loadAllCards() {
 }
 
 
-// DISPLAY CARDS
 const displaysCards = (cardData) => {
 
     const cardsContainer = document.getElementById("cardsContainer")
@@ -66,7 +64,6 @@ class="card bg-base-100 shadow-sm p-4 space-y-5 border-t-8 ${borderColor} cursor
     })
 }
 
-// TAB FILTERING
 
 document.getElementById("all-btn").onclick = () => {
 
@@ -94,7 +91,6 @@ document.getElementById("closedBtn").onclick = () => {
 }
 
 
-// ACTIVE BUTTON
 function setActive(id) {
 
     document.querySelectorAll("#all-btn,#openBtn,#closedBtn").forEach(btn => {
@@ -109,7 +105,6 @@ function setActive(id) {
 
 }
 
-// SEARCH
 
 const searchInput = document.querySelector("input")
 const searchBtn = document.querySelector(".btn-primary")
@@ -133,46 +128,6 @@ searchBtn.onclick = async () => {
 }
 
 
-// MODAL
 
 
-function openModal(id) {
-
-    fetch(`https://phi-lab-server.vercel.app/api/v1/lab/issue/${id}`)
-        .then(res => res.json())
-        .then(data => {
-
-            const issue = data.data
-
-            const modal = document.createElement("div")
-
-            modal.className =
-                "fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center"
-
-            modal.innerHTML = `
-     <div class="bg-white p-6 rounded w-[400px]">
-
-        <h2 class="text-xl font-bold mb-3">${issue.title}</h2>
-
-         <p class="mb-3">${issue.description}</p>
-
-            <p>Status: ${issue.status}</p>
-        <p>Priority: ${issue.priority}</p>
-            <p>Author: ${issue.author}</p>
-        <p>Label: ${issue.label}</p>
-        <p>Date: ${issue.createdAt}</p>
-
-    <button onclick="this.parentElement.parentElement.remove()"
-            class="btn btn-error mt-4">Close</button>
-
-        </div>
-            `
-
-            document.body.appendChild(modal)
-
-        })
-}
-
-
-// INITIAL LOAD
 loadAllCards()
