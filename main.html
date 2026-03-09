@@ -23,7 +23,6 @@
 </head>
 
 <body>
-    <!-- nav bar -->
     <header>
         <nav>
             <div class="navbar">
@@ -42,11 +41,10 @@
         </nav>
 
         <section class="w-[90%] mx-auto shadow mt-10 px-10 py-5 rounded">
-            <button id="all-btn"
-                class="btn text-[#64748B] bg-white hover:text-white hover:bg-[#4A00FF]  px-6 btn-outline">ALL</button>
-            <button id="open-btn"
+            <button id="all-btn" class="btn text-white bg-[#4A00FF]  px-6 btn-outline">ALL</button>
+            <button id="openBtn"
                 class="btn text-[#64748B] bg-white hover:text-white hover:bg-[#4A00FF]  px-6 btn-outline">Open</button>
-            <button id="closed-btn"
+            <button id="closedBtn"
                 class="btn text-[#64748B] bg-white hover:text-white hover:bg-[#4A00FF]  px-6 btn-outline">Closed</button>
         </section>
     </header>
@@ -71,17 +69,16 @@
         </div>
         <!-- card section  -->
         <section>
-            <div id="cardsContainer" class="grid sm:grid-cols-1 lg:grid-cols-4 gap-5 mt-15 mb-5 ">
+            <div id="cardsContainer" class=" sm:grid-cols-1 
+            grid lg:grid-cols-4 gap-5 mt-15 mb-5 ">
 
-             
 
+                <!-- <span id="allLoading" class="loading loading-spinner loading-lg"></span> -->
             </div>
         </section>
 
-    </main>
-
-    <script src="js/app.js"></script>
-    <script src="js/script.js"></script>
+       
+        <script src="js/app.js"></script>
 </body>
 
 </html>
