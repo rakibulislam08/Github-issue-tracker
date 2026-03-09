@@ -42,16 +42,16 @@
         </nav>
 
         <section class="w-[90%] mx-auto shadow mt-10 px-10 py-5 rounded">
-            <button
+            <button id="all-btn"
                 class="btn text-[#64748B] bg-white hover:text-white hover:bg-[#4A00FF]  px-6 btn-outline">ALL</button>
-            <button
+            <button id="open-btn"
                 class="btn text-[#64748B] bg-white hover:text-white hover:bg-[#4A00FF]  px-6 btn-outline">Open</button>
-            <button
+            <button id="closed-btn"
                 class="btn text-[#64748B] bg-white hover:text-white hover:bg-[#4A00FF]  px-6 btn-outline">Closed</button>
         </section>
     </header>
     <!-- main  -->
-    <main class="w-[90%] mx-auto mt-15 shadow-sm px-4">
+    <main class="w-[90%] mx-auto mt-15 shadow-sm px-4 pb-4">
         <div class="flex justify-between items-center shadow-sm p-5 rounded">
             <div class="flex gap-x-5">
                 <div>
@@ -70,39 +70,17 @@
 
         </div>
         <!-- card section  -->
-        <section class="mt-15 mb-5 ">
-            <div id="card-section" class="grid grid-cols-4 gap-5">
+        <section>
+            <div id="cardsContainer" class="grid sm:grid-cols-1 lg:grid-cols-4 gap-5 mt-15 mb-5 ">
 
-                <div class="card bg-base-100 shadow-sm p-6 space-y-5 
-            border-t-8 border-[#00A96E]">
-                    <div class="flex justify-between">
-                        <p><img src="./assets/Status.png" alt=""></p>
-                        <p class="badge badge-secondary">HIGH</p>
-                    </div>
-                    <p>The navigation menu doesn't collapse
-                        properly on mobile devices...</p>
-                    <div>
-                        <div class="card-actions">
-                            <p class="badge badge-outline">
-                                <span><img src="./assets/Vector (1).png" alt=""></span>
-                                BUG
-                            </p>
-                            <p class="badge badge-outline"><SPan><img src="./assets/Lifebuoy.png" alt=""></SPan>
-                                HELP WANTED</p>
-                        </div>
-                        <div class="text-[#64748B] space-y-2 pt-5">
-                            <div class="divider"></div>
-                            <p>#1 by john_doe</p>
-                            <p>1/15/2024</p>
-                        </div>
-                    </div>
-                </div>
+             
 
             </div>
         </section>
 
     </main>
 
+    <script src="js/app.js"></script>
     <script src="js/script.js"></script>
 </body>
 
